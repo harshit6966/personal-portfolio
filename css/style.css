@@ -21,7 +21,7 @@ a:hover {
   color: #EAF6F6;
 }
 
-hr {
+#mid {
   border: dotted #EAF6F6 6px;
   border-bottom: none;
   width: 10%;
@@ -148,6 +148,6 @@ h3 {
   text-decoration: none;
 }
 
-.footer-hr {
+#footer-hr {
   color: #281E1C;
 }
