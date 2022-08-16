@@ -21,7 +21,7 @@ a:hover {
   color: #EAF6F6;
 }
 
-#mid {
+hr {
   border: dotted #EAF6F6 6px;
   border-bottom: none;
   width: 10%;
@@ -147,8 +147,4 @@ h3 {
   background-image: -o-linear-gradient(top, #2B2D42);
   background-image: linear-gradient(to bottom, #2B2D42);
   text-decoration: none;
-}
-
-#footer-hr {
-  color: #281E1C;
 }
