@@ -122,12 +122,12 @@ h3 {
 }
 
 .btn {
-  background: #8D99AE;
-  background-image: -webkit-linear-gradient(top, #8D99AE);
-  background-image: -moz-linear-gradient(top, #8D99AE);
-  background-image: -ms-linear-gradient(top, #8D99AE);
-  background-image: -o-linear-gradient(top, #8D99AE);
-  background-image: linear-gradient(to bottom, #8D99AE);
+  background: #747e8f;
+  background-image: -webkit-linear-gradient(top, #747e8f);
+  background-image: -moz-linear-gradient(top, #747e8f);
+  background-image: -ms-linear-gradient(top, #747e8f);
+  background-image: -o-linear-gradient(top, #747e8f);
+  background-image: linear-gradient(to bottom, #747e8f);
   -webkit-border-radius: 100;
   -moz-border-radius: 100;
   border-radius: 100px;
