@@ -71,6 +71,10 @@ h3 {
   padding-top: 100px;
 }
 
+.job {
+  display: inline-block;
+}
+
 .middle-container {
   margin: 100px 0 100px 0;
 }
