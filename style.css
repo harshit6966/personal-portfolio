@@ -48,6 +48,11 @@ h3 {
   color: #11999E;
 }
 
+#job h3 {
+  display: inline; /* Makes the h3 element an inline element */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
 .intro {
   width: 40%;
   margin: auto;
