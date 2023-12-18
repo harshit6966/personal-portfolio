@@ -10,14 +10,6 @@ p {
   line-height: 2;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-}
-.logo {
-  margin-right: 10px;
-}
-
 a {
   color: #EAF6F6;
   font-family: 'Poppins', sans-serif;
