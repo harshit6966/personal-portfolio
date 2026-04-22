@@ -1,70 +1,406 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Harshit Kumar</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="media/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshit Kumar — Salesforce Engineer</title>
+  <link rel="icon" href="media/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <div class="top-container">
-      <img class="top-cloud" src="media/cloud.png" alt="cloud-img">
-      <h1>I'm Harshit</h1>
-      <p id="job">
-        <h2>Technical Support Engineer at <img class class="flex" src="media/salesforce.svg" height="25px" width="50px"></h2>
-      </p>
-        <img class="bottom-cloud" src="media/cloud.png" alt="cloud-img">
-      <img src="media/mountain.png" alt="mountain-img">
+  <!-- scroll progress bar -->
+  <div class="nav-progress-bar" id="progressBar"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-brand">
+      <span class="nav-brand-box">HK</span>
+      <span class="nav-brand-name">Harshit Kumar</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"   class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills"  class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <a href="mailto:harshit6966@gmail.com" class="nav-cta">
+      <span>Hire me</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+
+    <!-- Floating clouds -->
+    <img src="media/cloud.png" alt="" class="cloud cloud-1" aria-hidden="true">
+    <img src="media/cloud.png" alt="" class="cloud cloud-2" aria-hidden="true">
+    <img src="media/cloud.png" alt="" class="cloud cloud-3" aria-hidden="true">
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="name-line">I'm</span>
+          <span class="name-gradient">Harshit Kumar</span>
+        </h1>
+        <div class="hero-role-wrap">
+          <p class="hero-role">Technical Support Engineer</p>
+          <div class="hero-at-sf">
+            <span>at</span>
+            <!-- #3 — original blue Salesforce logo, no filter -->
+            <img src="media/salesforce.svg" alt="Salesforce" class="hero-sf-logo">
+          </div>
+        </div>
+        <p class="hero-sub">Crafting Salesforce solutions with Apex, Lightning Web Components, and a passion for clean, scalable architecture.</p>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Hot Wings</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <span>Get in Touch</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://github.com/harshit6966" target="_blank" rel="noopener" class="btn btn-ghost">
+            <img src="media/GitHub-Mark-120px-plus.png" alt="" class="btn-icon-img">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <div class="avatar-glow"></div>
+          <!-- #2 — static gradient ring, avatar does NOT rotate -->
+          <div class="avatar-ring-outer">
+            <div class="avatar-ring-inner">
+              <!-- #1 — new E7T5 profile picture -->
+              <img src="media/profile-picture-new.png" alt="Harshit Kumar" class="avatar">
+            </div>
+          </div>
+          <!-- #7 — orbs with brand backlight colors -->
+          <div class="orb orb-sf">
+            <img src="media/salesforce.svg" alt="Salesforce" class="orb-img-natural">
+          </div>
+          <div class="orb orb-js">
+            <img src="media/js-brands.svg" alt="JS" class="orb-img-dark">
+          </div>
+          <div class="orb orb-html">
+            <img src="media/html5-brands.svg" alt="HTML5" class="orb-img-white">
+          </div>
+          <div class="orb orb-css">
+            <img src="media/css3-brands.svg" alt="CSS3" class="orb-img-white">
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="middle-container">
-      <div class="profile">
-        <img src="media/profile-picture.png" alt="profile-picture" height="170px" width="170px">
-        <h2>Hello</h2>
-        <p class="intro">A focused professional with 2+ years of experience designing and customizing Salesforce.com applications using web services, Apex, Batch, Triggers, SOQL, Visualforce, LWC, Data Loader, Reports, Dashboards, and Lightning.</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="code-img" src="media/skills.png" alt="skills">
-          <h3>Design & Development</h3>
-          <p><img class="code-img" src="media/GitHub-Mark-120px-plus.png" alt="development"><a href="https://github.com/harshit6966" target="_blank" style="
-            color:#696463">Click Me!</a></p>
-        </div>
-        <div class="skill-row">
-          <img class="tech-img" src="media/tech.png" alt="skills">
-          <h3>Technologies</h3>
-          <img class="flex" src="media/salesforce.svg" height="150px" width="150px">
-          <img class="flex" src="media/html5-brands.svg" height="100px" width="100px">
-          <img class="flex" src="media/css3-brands.svg" height="100px" width="100px">
-          <img class="flex" src="media/js-brands.svg" height="100px" width="100px">
-          <img class="flex" src="media/angular-brands.svg" height="100px" width="100px">
-          <img class="flex" src="media/spring.png" height="150px" width="150px">
-        </div>
-        <div class="skill-row">
-          <img class="chilli-img" src="media/chillies.png" alt="chillies">
-          <h3>Hot Wings Challenge</h3>
-          <p>But my best skill is actually in eating hot wings. I am the undisputed king of hot wing challenges. Ghost Peppers and Carolina Reapers are my favourite snacks.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Drop an Email &#9759;</h3>
-        <a class="btn" href="mailto:harshit6966@gmail.com">CONTACT ME</a>
-      </div>
+    <div class="hero-mountain">
+      <img src="media/mountain.png" alt="" aria-hidden="true">
     </div>
+  </section>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/harshit2716/" target="_blank"><img src="media/linkedin-brands.svg" height="80px" width="100px"></a>
-      <a class="footer-link" href="https://trailblazer.me/id/harshit6966" target="_blank"><img src="media/trailhead.svg" height="80px" width="100px"></a>
-      <a class="footer-link" href="https://twitter.com/harshit27_" target="_blank"><img src="media/twitter-square-brands.svg" height="80px" width="100px"></a>
-      <a class="footer-link" href="preferenceForm.html" target="_blank"><img src="media/salesforce.svg" height="80px" width="100px"></a>
-      <br/>
-      <p class="copyright">&copy; 2023, Harshit Kumar. All rights reserved.</p>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Building great things<br>on the Salesforce platform</h2>
+          <p class="about-p">I'm a focused Salesforce professional with 2+ years of experience designing and customising Salesforce.com applications. My toolkit includes Apex, Batch Apex, Triggers, SOQL, Visualforce, Lightning Web Components, Data Loader, Reports, Dashboards, and the full Lightning Platform.</p>
+          <p class="about-p">I care about clean architecture, developer experience, and helping teams get maximum value from Salesforce.</p>
+          <div class="about-links">
+            <a href="https://trailblazer.me/id/harshit6966" target="_blank" rel="noopener" class="about-badge-link">
+              <!-- #6 — trailhead retains original colors -->
+              <img src="media/trailhead.svg" alt="Trailhead" class="logo-natural">
+              Trailhead Profile
+            </a>
+            <a href="https://www.linkedin.com/in/harshit2716/" target="_blank" rel="noopener" class="about-badge-link">
+              <img src="media/linkedin-brands.svg" alt="LinkedIn" class="logo-invert">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="about-right reveal reveal-delay">
+          <!-- #4 — code editor mockup instead of skills.png -->
+          <div class="code-editor-card">
+            <div class="code-bar">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+              <span class="code-filename">CaseController.cls</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line"><span class="ln">1</span><span class="c-kw">public class</span> <span class="c-cl">CaseController</span> {</div>
+              <div class="code-line"><span class="ln">2</span></div>
+              <div class="code-line"><span class="ln">3</span>  <span class="c-dec">@AuraEnabled(cacheable=true)</span></div>
+              <div class="code-line"><span class="ln">4</span>  <span class="c-kw">public static</span> List&lt;<span class="c-tp">Case</span>&gt; getCases(</div>
+              <div class="code-line"><span class="ln">5</span>      <span class="c-tp">String</span> accountId) {</div>
+              <div class="code-line"><span class="ln">6</span>    <span class="c-kw">return</span> [<span class="c-kw">SELECT</span> Id, Subject,</div>
+              <div class="code-line"><span class="ln">7</span>             Status, Priority</div>
+              <div class="code-line"><span class="ln">8</span>             <span class="c-kw">FROM</span> Case</div>
+              <div class="code-line"><span class="ln">9</span>             <span class="c-kw">WHERE</span> AccountId <span class="c-op">=</span> :accountId</div>
+              <div class="code-line"><span class="ln">10</span>            <span class="c-kw">LIMIT</span> <span class="c-num">10</span>];</div>
+              <div class="code-line"><span class="ln">11</span>  }</div>
+              <div class="code-line"><span class="ln">12</span>}</div>
+              <div class="code-cursor"></div>
+            </div>
+          </div>
+
+          <div class="chilli-card">
+            <img src="media/chillies.png" alt="Hot Wings Challenge" class="chilli-img">
+            <div class="chilli-text">
+              <span class="chilli-title">🌶️ Hot Wings King</span>
+              <p>Ghost Peppers and Carolina Reapers? Just a snack. Undisputed champion of every hot wing challenge.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Tech Stack</span>
+        <h2 class="section-title">What I work with</h2>
+        <p class="section-sub">A snapshot of the tools and technologies I use every day</p>
+      </div>
+
+      <!-- #5 — tech brand grid instead of tech.png -->
+      <div class="tech-brand-grid reveal">
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-sf">
+            <img src="media/salesforce.svg" alt="Salesforce" class="logo-natural">
+          </div>
+          <span>Salesforce</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-html">
+            <img src="media/html5-brands.svg" alt="HTML5" class="orb-img-white">
+          </div>
+          <span>HTML5</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-css">
+            <img src="media/css3-brands.svg" alt="CSS3" class="orb-img-white">
+          </div>
+          <span>CSS3</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-js">
+            <img src="media/js-brands.svg" alt="JavaScript" class="orb-img-dark">
+          </div>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-angular">
+            <img src="media/angular-brands.svg" alt="Angular" class="orb-img-white">
+          </div>
+          <span>Angular</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-spring">
+            <img src="media/spring.png" alt="Spring Boot">
+          </div>
+          <span>Spring Boot</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-github">
+            <img src="media/GitHub-Mark-120px-plus.png" alt="GitHub" class="orb-img-white">
+          </div>
+          <span>GitHub</span>
+        </div>
+        <div class="tech-brand-item">
+          <div class="tech-brand-icon tb-trail">
+            <!-- #6 — trailhead retains original colors -->
+            <img src="media/trailhead.svg" alt="Trailhead" class="logo-natural">
+          </div>
+          <span>Trailhead</span>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <div class="skill-icon-wrap">
+            <!-- #3, #6 — original Salesforce blue, no filter -->
+            <div class="brand-icon-wrap tb-sf">
+              <img src="media/salesforce.svg" alt="Salesforce" class="logo-natural">
+            </div>
+          </div>
+          <h3>Salesforce Platform</h3>
+          <p>Apex, Triggers, Batch Apex, SOQL, Visualforce, LWC, Flows, Reports &amp; Dashboards</p>
+          <div class="skill-tags">
+            <span>Apex</span><span>LWC</span><span>SOQL</span><span>Flows</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-glow glow-purple"></div>
+          <!-- #7 — backlit brand icons -->
+          <div class="skill-icon-wrap multi">
+            <div class="brand-icon-wrap tb-html">
+              <img src="media/html5-brands.svg" alt="HTML5" class="orb-img-white">
+            </div>
+            <div class="brand-icon-wrap tb-css">
+              <img src="media/css3-brands.svg" alt="CSS3" class="orb-img-white">
+            </div>
+            <div class="brand-icon-wrap tb-js">
+              <img src="media/js-brands.svg" alt="JavaScript" class="orb-img-dark">
+            </div>
+          </div>
+          <h3>Web Technologies</h3>
+          <p>HTML5, CSS3, and JavaScript — building clean, performant, responsive interfaces</p>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-glow glow-orange"></div>
+          <div class="skill-icon-wrap multi">
+            <div class="brand-icon-wrap tb-angular">
+              <img src="media/angular-brands.svg" alt="Angular" class="orb-img-white">
+            </div>
+            <div class="brand-icon-wrap tb-spring">
+              <img src="media/spring.png" alt="Spring Boot">
+            </div>
+          </div>
+          <h3>Frameworks</h3>
+          <p>Angular for modern frontends, Spring Boot for robust Java back-end services</p>
+          <div class="skill-tags">
+            <span>Angular</span><span>Spring Boot</span><span>Java</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-glow glow-green"></div>
+          <div class="skill-icon-wrap">
+            <div class="brand-icon-wrap tb-github">
+              <img src="media/GitHub-Mark-120px-plus.png" alt="GitHub" class="orb-img-white">
+            </div>
+          </div>
+          <h3>Version Control &amp; Dev</h3>
+          <p>Git, GitHub, collaborative development, and open-source portfolio contributions</p>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Open Source</span>
+          </div>
+          <a href="https://github.com/harshit6966" target="_blank" rel="noopener" class="card-cta">View Projects →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's build something together</h2>
+          <p class="contact-p">Whether it's a project, an opportunity, or just a conversation — I'd love to hear from you. My inbox is always open.</p>
+          <a href="mailto:harshit6966@gmail.com" class="btn btn-primary btn-large">
+            Send me an email
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="contact-right">
+          <div class="contact-card">
+            <p class="contact-card-label">Find me on</p>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/harshit2716/" target="_blank" rel="noopener" class="social-pill" aria-label="LinkedIn">
+                <img src="media/linkedin-brands.svg" alt="LinkedIn" class="social-img-invert">
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://trailblazer.me/id/harshit6966" target="_blank" rel="noopener" class="social-pill" aria-label="Trailhead">
+                <!-- #6 — trailhead retains original colors -->
+                <img src="media/trailhead.svg" alt="Trailhead" class="social-img-natural">
+                <span>Trailhead</span>
+              </a>
+              <a href="https://twitter.com/harshit27_" target="_blank" rel="noopener" class="social-pill" aria-label="Twitter">
+                <img src="media/twitter-square-brands.svg" alt="Twitter" class="social-img-invert">
+                <span>Twitter</span>
+              </a>
+              <a href="https://github.com/harshit6966" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub">
+                <img src="media/GitHub-Mark-120px-plus.png" alt="GitHub" class="social-img-invert">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">HK</span>
+      <p>&copy; 2026 Harshit Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll progress bar
+    const progressBar = document.getElementById('progressBar');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      progressBar.style.width = (scrolled * 100) + '%';
+    }, { passive: true });
+
+    // Nav shrink + active link on scroll
+    const nav = document.getElementById('nav');
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.toggle('nav-link-active', link.dataset.section === current);
+      });
+    }, { passive: true });
+
+    // Reveal on scroll
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Stagger skill card reveals
+    document.querySelectorAll('.skill-card').forEach((card, i) => {
+      card.style.transitionDelay = `${i * 0.1}s`;
+    });
+  </script>
+
+</body>
 </html>
