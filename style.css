@@ -866,6 +866,27 @@ a { text-decoration: none; color: inherit; }
 .footer p { font-size: 0.85rem; color: var(--text-faint); }
 
 /* ══════════════════════════════════════════════════════════
+   VISITOR COUNTER
+══════════════════════════════════════════════════════════ */
+.footer-visit-count {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+.footer-visit-count .visit-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.45;
+}
+#visitCountNum {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ══════════════════════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════════════════════ */
 @media (max-width: 900px) {

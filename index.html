@@ -360,6 +360,11 @@
     <div class="footer-inner">
       <span class="footer-brand">HK</span>
       <p>&copy; 2026 Harshit Kumar. All rights reserved.</p>
+      <div class="footer-visit-count" title="Total site visits">
+        <svg class="visit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span id="visitCountNum">—</span>
+        <span>visits</span>
+      </div>
     </div>
   </footer>
 
@@ -400,6 +405,32 @@
     document.querySelectorAll('.skill-card').forEach((card, i) => {
       card.style.transitionDelay = `${i * 0.1}s`;
     });
+
+    // ── Visitor tracking ──────────────────────────────────────
+    // Replace this URL with your deployed Google Apps Script web app URL
+    const TRACKER_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+
+    const countEl = document.getElementById('visitCountNum');
+
+    async function logVisit() {
+      try {
+        const res = await fetch(TRACKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            action: 'log',
+            page: location.pathname,
+            referrer: document.referrer,
+            ua: navigator.userAgent,
+            ts: new Date().toISOString()
+          })
+        });
+        const data = await res.json();
+        if (data.totalVisits !== undefined) countEl.textContent = data.totalVisits.toLocaleString();
+      } catch (_) { /* tracker down — silently fail */ }
+    }
+
+    logVisit();
   </script>
 
 </body>
